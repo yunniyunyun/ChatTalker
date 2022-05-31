@@ -8,6 +8,14 @@
     line-height: 46px;
     font-weight: bold;
 }
+.font-32-35{
+    font-size: 32px;
+    line-height: 35px;
+}
+.font-29-42{
+    font-size: 29px;
+    line-height: 42px;
+}
 .font-24-35-b{
     font-size: 24px;
     line-height: 35px;
@@ -22,13 +30,28 @@
     line-height: 26px;
     font-weight: bold;
 }
+.font-18-28{
+    font-size: 18px;
+    line-height: 28px;
+}
 .font-18-26{
     font-size: 18px;
     line-height: 26px;
 }
+.font-16-32{
+    font-size: 16px;
+    line-height: 32px;
+}
 .font-16-24{
     font-size: 16px;
     line-height: 24px;
+}
+.font-12-17{
+    font-size: 12px;
+    line-height: 17px;
+}
+.font-c-main{
+    color: $main-color;
 }
 @media (max-width: 767px){
     .s-font-32-46-b{

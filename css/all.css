@@ -77,6 +77,16 @@ a {
   font-weight: bold;
 }
 
+.font-32-35 {
+  font-size: 32px;
+  line-height: 35px;
+}
+
+.font-29-42 {
+  font-size: 29px;
+  line-height: 42px;
+}
+
 .font-24-35-b {
   font-size: 24px;
   line-height: 35px;
@@ -94,14 +104,33 @@ a {
   font-weight: bold;
 }
 
+.font-18-28 {
+  font-size: 18px;
+  line-height: 28px;
+}
+
 .font-18-26 {
   font-size: 18px;
   line-height: 26px;
 }
 
+.font-16-32 {
+  font-size: 16px;
+  line-height: 32px;
+}
+
 .font-16-24 {
   font-size: 16px;
   line-height: 24px;
+}
+
+.font-12-17 {
+  font-size: 12px;
+  line-height: 17px;
+}
+
+.font-c-main {
+  color: #56C4C5;
 }
 
 @media (max-width: 767px) {
@@ -157,6 +186,9 @@ a {
 }
 body {
   font-family: "Noto Sans TC";
+}
+
+.indexBody {
   background-image: url("../images/ball01.svg"), url("../images/ball02.svg"), url("../images/ball03.svg");
   background-repeat: no-repeat;
   background-size: 360px, 310px, 150px;
@@ -165,7 +197,7 @@ body {
 }
 
 @media (max-width: 767px) {
-  body {
+  .indexBody {
     background-size: 126px, 135px, 153px;
     background-position: -77px calc(100vh + 15px), calc(100vw - 88px) 460vh, -76px 750vh;
   }
@@ -601,4 +633,153 @@ footer .add a {
   background: #F5F5F5;
   text-align: center;
   padding: 16px 0;
+}
+
+.program {
+  height: 73vh;
+  background-image: url("../images/banner.svg");
+  background-repeat: no-repeat;
+  background-size: auto 73vh;
+  background-position: top right;
+  position: relative;
+}
+.program .content {
+  margin-top: 92px;
+}
+.program .program-bg {
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  height: 62vh;
+  background: #F7F9FD;
+  border-radius: 0px 0px 0px 300px;
+  z-index: -1;
+}
+
+.programList {
+  max-width: 909px;
+  margin: 8px auto 0;
+  text-align: center;
+}
+.programList h2 {
+  margin-bottom: 48px;
+}
+.programList .peopleChoose {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 64px;
+}
+.programList .peopleChoose li {
+  margin-right: 16px;
+}
+.programList .peopleChoose li:last-child {
+  margin-right: 0;
+}
+.programList .peopleChoose a {
+  display: block;
+  padding: 12px 32px;
+  border: 1px solid #56C4C5;
+  border-radius: 27px;
+  color: #56C4C5;
+  font-family: "Comfortaa";
+}
+.programList .peopleChoose .choose {
+  background: #56C4C5;
+  color: #fff;
+}
+
+.feeList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 94px;
+}
+.feeList h3 {
+  padding: 16px 24px;
+  border-bottom: 1px solid #DDDDDD;
+}
+.feeList > li {
+  width: 50%;
+  margin-right: 2%;
+  -webkit-box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.0784313725);
+          box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.0784313725);
+  border-radius: 12px;
+  padding-bottom: 38px;
+}
+.feeList .feeBody {
+  padding: 32px 23px 0 29px;
+}
+.feeList .feeBody > p {
+  margin-bottom: 32px;
+}
+
+.feeFormula {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 32px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.feeFormula > div {
+  background: #F5F5F5;
+  border-radius: 12px;
+  padding: 24px 32px;
+}
+.feeFormula > div h4 {
+  margin-bottom: 8px;
+}
+.feeFormula > div span {
+  margin-right: 4px;
+}
+
+.functionList {
+  margin-bottom: 42px;
+}
+.functionList li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 16px;
+}
+.functionList li img {
+  margin-right: 12px;
+}
+
+.QAList ul {
+  -moz-text-align-last: left;
+       text-align-last: left;
+  margin-bottom: 100px;
+}
+.QAList ul li {
+  background-image: url("../images/icon_plus.svg");
+  background-repeat: no-repeat;
+  background-size: 20px;
+  background-position: top 19px right 32px;
+  padding: 16px 32px;
+  -webkit-box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.0784313725);
+          box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.0784313725);
+  border-radius: 12px;
+  margin-bottom: 16px;
+}
+.QAList ul li p {
+  display: none;
+  margin-top: 24px;
+  color: #747474;
+}
+.QAList ul li p.show {
+  display: block;
+}
+.QAList ul li.active {
+  font-weight: bold;
+  color: #56C4C5;
+  background-image: url("../images/icon_minus.svg");
 }
