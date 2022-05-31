@@ -6,9 +6,20 @@ body{
     background-position:-222px calc(100vh - 180px),calc(100vw - 210px) calc(230vh - 180px),50px 340vh;
     color: $black;
 }
+@media (max-width: 767px){
+    body{
+        background-size:126px,135px,153px;
+        background-position:-77px calc(100vh + 15px),calc(100vw - 88px) 460vh,-76px 750vh;
+    } 
+}
 .container{
     margin: 0 auto;
     max-width: 1088px;
+}
+@media (max-width: 767px){
+    .container{
+        width: 80vw;
+    }
 }
 .top{
     position: fixed;
@@ -24,6 +35,11 @@ body{
         background: $main-color;
         border-radius: 100%;
         font-weight: bold;
+        border: 1px solid $main-color;
+        &:hover{
+            background: #fff;
+            color: $main-color;
+        }
     }
 }
 .header{
@@ -40,6 +56,23 @@ body{
         }
     }
 }
+@media (max-width: 767px) {
+    .header{
+        background-image: url("../images/home.svg"),url("../images/bg_home_sm.svg");
+        background-size: 80vw auto, 89vw auto;
+        background-position: bottom 10vh center;
+        .content{
+            padding: 0;
+            h1{
+                margin-bottom: 8px;
+            }
+            h2{
+                margin-bottom: 16px;
+            }
+        }
+    }
+    
+}
 .header-bar{
     padding: 24px;
     display: flex;
@@ -55,7 +88,23 @@ body{
         background: $red;
         color: #fff;
         line-height: 24px;
+        border: 1px solid $red;
+        &:hover{
+            background: #fff;
+            color: $red;
+        }
     }
+}
+@media (max-width: 767px) {
+    .header-bar{
+        border-bottom: 2px solid $yellow;
+        padding: 24px 10vw;
+        width: 100vw;
+        .logo img{
+            height: 24px;
+        }
+    }
+    
 }
 .platform{
     max-width: 969px;
@@ -86,6 +135,26 @@ body{
         }
     }
 }
+@media (max-width: 767px){
+    .platform{
+        width: 80vw;
+        ul{
+            display: block;
+            li{
+                width: 100%;
+                margin-bottom: 24px;
+                img{
+                    width: 60px;
+                    margin-bottom: 16px;
+                }
+                h3{
+                    margin-bottom: 16px;
+                }
+            }
+        }
+    }
+    
+}
 .role{
     text-align: center;
     margin-bottom: 100px;
@@ -112,6 +181,19 @@ body{
             h3{
                 color: $main-color;
                 margin-bottom: 16px;
+            }
+        }
+    }
+}
+@media (max-width: 767px){
+    .role{
+        ul{
+            width: 67vw;
+            margin: 0 auto;
+            flex-wrap: wrap;
+            li{
+                width: 100%;
+                margin-bottom: 24px;
             }
         }
     }
@@ -171,6 +253,25 @@ body{
         }
     }
 }
+@media (max-width: 767px){
+    .feature{
+        display: block;
+        .featureContent{
+            text-align: center;
+            width: 80vw;
+        }
+        ul{
+            width: 67vw;
+            display: block;
+            margin: 0 auto;
+            li{
+                margin: 0 auto 24px;
+                padding: 32px 24px 48px;
+            }
+        }
+    }
+    
+}
 .evaluate{
     text-align: center;
     &>h2{
@@ -187,6 +288,7 @@ body{
             border-radius: 12px;
             padding: 48px 32px 24px;
             position: relative;
+            background: #fff;
             p{
                 padding-bottom: 24px;
                 border-bottom: 1px solid #DDDDDD;
@@ -253,6 +355,15 @@ body{
         
     }
 }
+@media (max-width: 767px){
+    .evaluate{
+        .userList{
+            &>li{
+                width: 100%;
+            }
+        }
+    }
+}
 footer{
     .add{ 
         background: #fff;
@@ -264,6 +375,21 @@ footer{
         padding-bottom: 100px;
         a{
             margin-top: 48px;
+        }
+    }
+}
+@media (max-width: 767px){
+    footer{
+        .add{ 
+            background: #fff;
+            background-image: url("../images/footer_sm.svg");
+            background-size: 100%;
+            background-repeat: no-repeat;
+            padding-top: 293px;
+            padding-bottom: 60px;
+            a{
+                margin-top: 24px;
+            }
         }
     }
 }
