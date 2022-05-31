@@ -234,6 +234,7 @@ body {
   }
 }
 .header-bar {
+  max-width: 1088px;
   padding: 24px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -244,7 +245,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 30px;
+  margin: 0 auto 30px;
 }
 .header-bar .logo img {
   height: 40px;
@@ -266,7 +267,6 @@ body {
   .header-bar {
     border-bottom: 2px solid #FFD153;
     padding: 24px 10vw;
-    width: 100vw;
   }
   .header-bar .logo img {
     height: 24px;
@@ -307,7 +307,6 @@ body {
 }
 .platform ul li h3 {
   margin-bottom: 24px;
-  white-space: nowrap;
 }
 .platform ul li p {
   color: #747474;
@@ -601,5 +600,5 @@ footer .add a {
 .copyright {
   background: #F5F5F5;
   text-align: center;
-  padding: 16px;
+  padding: 16px 0;
 }
