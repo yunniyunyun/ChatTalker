@@ -454,6 +454,13 @@ footer{
     background-size: 361px;
     background-position: -267px 120vh;
 }
+@media (max-width: 767px){
+    .bg-ball{
+        background-size: 204px;
+        background-position: -108px 210vh;
+    }
+   
+}
 .programList{
     max-width: 909px;
     margin: 8px auto 0;
@@ -485,13 +492,12 @@ footer{
         }
     }
 }
-// TODO:|FIXME:|
 @media (max-width: 767px){
     .programList{
         width: 93vw;
         .peopleChoose{
-            width: 100%;
-            overflow-x:auto;
+            justify-content: start;
+            overflow-x:scroll;
             li{
                 margin-right: 8px;
             }
@@ -527,10 +533,14 @@ footer{
 @media (max-width: 767px){
     .feeList{
         flex-wrap: wrap;
+        margin-bottom: 60px;
         &>li{
             width: 100%;
             margin-right: 0;
             margin-bottom: 24px;
+            &:last-child{
+                margin-bottom: 0;
+            }
         }
         .feeBody{
             padding: 24px 16px 0px 16px;
