@@ -146,10 +146,20 @@ a {
     font-weight: bold;
   }
 
+  .s-font-28-32 {
+    font-size: 28px;
+    line-height: 32px;
+  }
+
   .s-font-24-35-b {
     font-size: 24px;
     line-height: 35px;
     font-weight: bold;
+  }
+
+  .s-font-24-35 {
+    font-size: 24px;
+    line-height: 35px;
   }
 
   .s-font-18-26-b {
@@ -161,6 +171,11 @@ a {
   .s-font-16-24 {
     font-size: 16px;
     line-height: 24px;
+  }
+
+  .s-font-14-20 {
+    font-size: 14px;
+    line-height: 20px;
   }
 }
 .btn {
@@ -228,12 +243,21 @@ body {
   border-radius: 100%;
   font-weight: bold;
   border: 1px solid #56C4C5;
+  font-family: "Wendy One";
 }
 .top a:hover {
   background: #fff;
   color: #56C4C5;
 }
 
+@media (max-width: 767px) {
+  .top a {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 14px;
+  }
+}
 .header {
   height: 100vh;
   background-image: url("../images/home.svg"), url("../images/bg_home.svg");
@@ -297,6 +321,7 @@ body {
 
 @media (max-width: 767px) {
   .header-bar {
+    background: #fff;
     border-bottom: 2px solid #FFD153;
     padding: 24px 10vw;
   }
@@ -647,6 +672,15 @@ footer .add a {
   margin-top: 92px;
 }
 
+@media (max-width: 767px) {
+  .program {
+    height: 100vh;
+    background-image: url("../images/banner_sm.svg");
+    background-repeat: no-repeat;
+    background-size: 100vw auto;
+    background-position: top 90px right;
+  }
+}
 .program-bg {
   position: absolute;
   top: 0;
@@ -657,6 +691,13 @@ footer .add a {
   z-index: -1;
 }
 
+@media (max-width: 767px) {
+  .program-bg {
+    height: calc(100vh - 10%);
+    border-radius: 0px 0px 0px 150px;
+    background-position: top 90px right;
+  }
+}
 .bg-ball {
   background: url("../images/ball03.svg");
   background-repeat: no-repeat;
@@ -700,6 +741,22 @@ footer .add a {
   color: #fff;
 }
 
+@media (max-width: 767px) {
+  .programList {
+    width: 93vw;
+  }
+  .programList .peopleChoose {
+    width: 100%;
+    overflow-x: auto;
+  }
+  .programList .peopleChoose li {
+    margin-right: 8px;
+  }
+  .programList .peopleChoose a {
+    padding: 8px 16px;
+    white-space: nowrap;
+  }
+}
 .feeList {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -713,6 +770,7 @@ footer .add a {
 .feeList > li {
   width: 50%;
   margin-right: 2%;
+  background: #fff;
   -webkit-box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.0784313725);
           box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.0784313725);
   border-radius: 12px;
@@ -725,6 +783,20 @@ footer .add a {
   margin-bottom: 32px;
 }
 
+@media (max-width: 767px) {
+  .feeList {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .feeList > li {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 24px;
+  }
+  .feeList .feeBody {
+    padding: 24px 16px 0px 16px;
+  }
+}
 .feeFormula {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -749,8 +821,15 @@ footer .add a {
   margin-right: 4px;
 }
 
+@media (max-width: 767px) {
+  .feeFormula > div {
+    width: 46%;
+    padding: 16px 24px;
+  }
+}
 .functionList {
   margin-bottom: 42px;
+  text-align: left;
 }
 .functionList li {
   display: -webkit-box;
@@ -762,6 +841,12 @@ footer .add a {
   margin-right: 12px;
 }
 
+@media (max-width: 767px) {
+  .functionList li img {
+    width: 16px;
+    line-height: 14px;
+  }
+}
 .QAList ul {
   text-align: left;
   margin-bottom: 100px;
@@ -789,4 +874,14 @@ footer .add a {
   font-weight: bold;
   color: #56C4C5;
   background-image: url("../images/icon_minus.svg");
+}
+
+@media (max-width: 767px) {
+  .QAList ul {
+    margin-bottom: 60px;
+  }
+  .QAList ul li {
+    background-size: 16px;
+    padding: 16px;
+  }
 }
