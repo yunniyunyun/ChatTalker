@@ -410,15 +410,21 @@ footer{
     .content{
         margin-top: 92px;
     }
-    .program-bg{
-        position: absolute;
-        top: 0;
-        width: 100vw;
-        height: 62vh;
-        background: #F7F9FD;
-        border-radius: 0px 0px 0px 300px;
-        z-index: -1;
-    }
+}
+.program-bg{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 62vh;
+    background: #F7F9FD;
+    border-radius: 0px 0px 0px 300px;
+    z-index: -1;
+}
+.bg-ball{
+    background: url("../images/ball03.svg");
+    background-repeat: no-repeat;
+    background-size: 361px;
+    background-position: -267px 120vh;
 }
 .programList{
     max-width: 909px;
@@ -501,7 +507,7 @@ footer{
 }
 .QAList{
     ul{
-        text-align-last: left;
+        text-align: left;
         margin-bottom: 100px;
         li{
             background-image: url("../images/icon_plus.svg");
