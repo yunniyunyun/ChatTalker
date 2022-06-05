@@ -1,5 +1,5 @@
 body{
-    font-family: "Noto Sans TC";
+    font-family: "Noto Sans TC", "sans-serif";
 }
 .indexBody{
     background-image:url("../images/ball01.svg"),url("../images/ball02.svg"),url("../images/ball03.svg");
@@ -8,7 +8,7 @@ body{
     background-position:-222px calc(100vh - 180px),calc(100vw - 210px) calc(230vh - 180px),50px 340vh;
     color: $black;
 }
-@media (max-width: 767px){
+@media (max-width: 768px){
     .indexBody{
         background-size:126px,135px,153px;
         background-position:-77px calc(100vh + 15px),calc(100vw - 88px) 460vh,-76px 750vh;
@@ -16,11 +16,19 @@ body{
 }
 .container{
     margin: 0 auto;
-    max-width: 1088px;
+    max-width: 1120px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+@media (max-width: 992px) {
+    .container{
+        width: 80vw;
+    }
 }
 @media (max-width: 767px){
     .container{
-        width: 80vw;
+        width: 100vw;
+        padding: 0 20px;
     }
 }
 .top{
@@ -69,30 +77,24 @@ body{
         }
     }
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
     .header{
         background-image: url("../images/home.svg"),url("../images/bg_home_sm.svg");
         background-size: 80vw auto, 89vw auto;
         background-position: bottom 10vh center;
         .content{
-            padding: 0;
-            h1{
-                margin-bottom: 8px;
-            }
-            h2{
-                margin-bottom: 16px;
-            }
+            padding: 0 20px;
         }
     }
     
 }
 .header-bar{
     max-width: 1088px;
-    padding: 24px;
+    margin: 0 auto;
+    padding: 24px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 auto 30px;
     .logo img{
         height: 40px;
     }
@@ -121,26 +123,17 @@ body{
     
 }
 .platform{
-    max-width: 969px;
     text-align: center;
-    margin: 0 auto 100px;
-    &>h2{
-        margin-bottom: 48px;
-    }
     ul{
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         li{
-            display: flex;
-            flex-direction: column;
-            align-items: center; 
+            text-align: center;
             width: 28%;
             img{
                 width: 90px;
-                margin-bottom: 24px;
-            }
-            h3{
-                margin-bottom: 24px;
+                margin-right: auto;
+                margin-left: auto;
             }
             p{
                 color: $gray;
@@ -155,13 +148,8 @@ body{
             display: block;
             li{
                 width: 100%;
-                margin-bottom: 24px;
                 img{
                     width: 60px;
-                    margin-bottom: 16px;
-                }
-                h3{
-                    margin-bottom: 16px;
                 }
             }
         }
@@ -170,13 +158,6 @@ body{
 }
 .role{
     text-align: center;
-    margin-bottom: 100px;
-    &>h2{
-        margin-bottom: 16px;
-    }
-    &>p{
-        margin-bottom: 48px;
-    }
     ul{
         display: flex;
         justify-content: space-between;
@@ -193,7 +174,7 @@ body{
             }
             h3{
                 color: $main-color;
-                margin-bottom: 16px;
+                font-weight: bold;
             }
         }
     }
@@ -206,7 +187,6 @@ body{
             flex-wrap: wrap;
             li{
                 width: 100%;
-                margin-bottom: 24px;
             }
         }
     }
@@ -215,28 +195,21 @@ body{
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
-    margin-bottom: 100px;
+    align-items: center;
     .featureContent{
         width: 45%;
-        padding: 50px;
-        h2{
-            margin-bottom: 16px;
-        }
-        a{
-            margin-top: 48px;
-        }
     }
     ul{
         width: 45%;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+        gap: 18px 28px;
         li{
             width: 230px;
             border-radius: 12px;
             box-shadow: 0px 2px 10px #00000014;
             padding: 32px 32px 48px;
-            margin-bottom: 24px;
             background: #fff;
             .icon{
                 width: 86px;
@@ -260,8 +233,6 @@ body{
                 background-image: url("../images/icon04.svg");
             }
             h3{
-                margin-top: 24px;
-                margin-bottom: 16px;
                 font-weight: bold;
             }
         }
@@ -272,14 +243,12 @@ body{
         display: block;
         .featureContent{
             text-align: center;
-            width: 80vw;
+            width: 100%;
         }
         ul{
-            width: 67vw;
-            display: block;
-            margin: 0 auto;
+            width: 100%;
+            justify-content: center;
             li{
-                margin: 0 auto 24px;
                 padding: 32px 24px 48px;
             }
         }
@@ -288,14 +257,10 @@ body{
 }
 .evaluate{
     text-align: center;
-    &>h2{
-        margin-bottom: 104px;
-    }
     .userList{
         display: flex;
         justify-content: space-between;
         text-align: left;
-        margin-bottom: 24px;
         &>li{
             width: 32.5%;
             box-shadow: 0px 2px 10px #00000014;
@@ -328,7 +293,6 @@ body{
         }
     }
     .userBody{
-        margin-top: 24px;
         display: flex;
         justify-content: space-between;
         align-items: flex-end;
@@ -347,12 +311,10 @@ body{
     .userInfo{
         h3{
             font-weight: bold;
-            margin-bottom: 8px;
         }
     }
     .bar{
         display: flex;
-        margin-bottom: 100px;
         justify-content: center;
         li{
             height: 10px;
@@ -374,6 +336,9 @@ body{
         .userList{
             &>li{
                 width: 100%;
+                p{
+                    padding-bottom: 16px;
+                }
             }
         }
     }
@@ -386,10 +351,6 @@ footer{
         background-repeat: no-repeat;
         text-align: center;
         padding-top: 260px;
-        padding-bottom: 100px;
-        a{
-            margin-top: 48px;
-        }
     }
 }
 @media (max-width: 767px){
@@ -400,10 +361,6 @@ footer{
             background-size: 100%;
             background-repeat: no-repeat;
             padding-top: 293px;
-            padding-bottom: 60px;
-            a{
-                margin-top: 24px;
-            }
         }
     }
 }
@@ -414,15 +371,12 @@ footer{
 }
 // programFee.html
 .program{
-    height: 73vh;
+    height: 100vh;
     background-image: url("../images/banner.svg");
     background-repeat: no-repeat;
-    background-size: auto 73vh;
+    background-size: auto 100vh;
     background-position: top right;
     position: relative;
-    .content{
-        margin-top: 92px;
-    }
 }
 @media (max-width: 767px){
     .program{
@@ -437,7 +391,7 @@ footer{
     position: absolute;
     top: 0;
     width: 100%;
-    height: 62vh;
+    height: 80vh;
     background: #F7F9FD;
     border-radius: 0px 0px 0px 300px;
     z-index: -1;
@@ -466,13 +420,9 @@ footer{
     max-width: 909px;
     margin: 8px auto 0;
     text-align: center;
-    h2{
-        margin-bottom: 48px;
-    }
     .peopleChoose{
         display: flex;
         justify-content: center;
-        margin-bottom: 64px;
         li{
             margin-right: 16px;
             &:last-child{
@@ -515,7 +465,6 @@ footer{
 }
 .feeList{
     display: flex;
-    margin-bottom: 94px;
     h3{
         padding: 16px 24px;
         border-bottom: 1px solid #DDDDDD;
@@ -530,22 +479,15 @@ footer{
     }
     .feeBody{
         padding: 32px 23px 0 29px;
-        &>p{
-            margin-bottom: 32px;
-        }
     }
 }
 @media (max-width: 767px){
     .feeList{
         flex-wrap: wrap;
-        margin-bottom: 60px;
         &>li{
             width: 100%;
             margin-right: 0;
-            margin-bottom: 24px;
-            &:last-child{
-                margin-bottom: 0;
-            }
+            padding-bottom: 24px;
         }
         .feeBody{
             padding: 24px 16px 0px 16px;
@@ -554,16 +496,12 @@ footer{
 }
 .feeFormula{
     display: flex;
-    margin-bottom: 32px;
     justify-content: space-between;
     align-items: center;
     &>div{
         background: #F5F5F5;
         border-radius: 12px;
         padding: 24px 32px;
-        h4{
-            margin-bottom: 8px;
-        }
         span{
             margin-right: 4px;
         }
@@ -574,17 +512,19 @@ footer{
         &>div{
             width: 46%;
             padding: 16px 24px;
+            white-space:nowrap;
         }  
     }
 }
 .functionList{
-    margin-bottom: 42px;
     text-align: left;
     li{
-        display: flex;
-        margin-bottom: 16px;
         img{
             margin-right: 12px;
+            display: inline;
+        }
+        p{
+            display: inline;
         }
     }
 }
@@ -601,7 +541,6 @@ footer{
 .QAList{
     ul{
         text-align: left;
-        margin-bottom: 100px;
         li{
             background-image: url("../images/icon_plus.svg");
             background-repeat: no-repeat;
@@ -610,10 +549,8 @@ footer{
             padding: 16px 32px;
             box-shadow: 0px 2px 10px #00000014;
             border-radius: 12px;
-            margin-bottom: 16px;
             p{
                 display: none;
-                margin-top: 24px;
                 color: #747474;
                 &.show {
                     display: block;
@@ -623,6 +560,9 @@ footer{
                 font-weight: bold;
                 color: $main-color;
                 background-image: url("../images/icon_minus.svg");
+                p{
+                    font-weight: normal;
+                }
             }
         }
     }
@@ -630,7 +570,6 @@ footer{
 @media (max-width: 767px){
     .QAList{
         ul{
-            margin-bottom: 60px;
             li{
                 background-size:16px;
                 padding: 16px;
