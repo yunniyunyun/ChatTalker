@@ -182,7 +182,8 @@ a {
   border-radius: 27px;
   background: #56C4C5;
   padding: 12px 32px;
-  font-size: 26px;
+  font-size: 18px;
+  line-height: 26px;
   font-family: "Comfortaa";
   color: #fff;
   display: inline-block;
@@ -200,7 +201,7 @@ a {
   }
 }
 body {
-  font-family: "Noto Sans TC";
+  font-family: "Noto Sans TC", "sans-serif";
 }
 
 .indexBody {
@@ -219,7 +220,9 @@ body {
 }
 .container {
   margin: 0 auto;
-  max-width: 1088px;
+  max-width: 1120px;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
 @media (max-width: 992px) {
@@ -341,20 +344,13 @@ body {
           justify-content: center;
 }
 .platform ul li {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  text-align: center;
   width: 28%;
 }
 .platform ul li img {
   width: 90px;
+  margin-right: auto;
+  margin-left: auto;
 }
 .platform ul li p {
   color: #747474;
@@ -484,7 +480,7 @@ body {
   }
   .feature .featureContent {
     text-align: center;
-    width: 80vw;
+    width: 100%;
   }
   .feature ul {
     width: 100%;
@@ -621,10 +617,10 @@ footer .add {
 }
 
 .program {
-  height: 73vh;
+  height: 100vh;
   background-image: url("../images/banner.svg");
   background-repeat: no-repeat;
-  background-size: auto 73vh;
+  background-size: auto 100vh;
   background-position: top right;
   position: relative;
 }
@@ -642,7 +638,7 @@ footer .add {
   position: absolute;
   top: 0;
   width: 100%;
-  height: 62vh;
+  height: 80vh;
   background: #F7F9FD;
   border-radius: 0px 0px 0px 300px;
   z-index: -1;
@@ -782,18 +778,18 @@ footer .add {
   .feeFormula > div {
     width: 46%;
     padding: 16px 24px;
+    white-space: nowrap;
   }
 }
 .functionList {
   text-align: left;
 }
-.functionList li {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
 .functionList li img {
   margin-right: 12px;
+  display: inline;
+}
+.functionList li p {
+  display: inline;
 }
 
 @media (max-width: 767px) {
