@@ -195,7 +195,14 @@ a {
   color: #56C4C5;
 }
 
-@media (max-width: 768px) {
+.card {
+  background: #fff;
+  -webkit-box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.0784313725);
+          box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.0784313725);
+  border-radius: 12px;
+}
+
+@media (max-width: 992px) {
   .s-display-n {
     display: none;
   }
@@ -230,7 +237,7 @@ body {
     width: 80vw;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .container {
     width: 100vw;
     padding: 0 20px;
@@ -259,7 +266,7 @@ body {
   color: #56C4C5;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .top a {
     width: 50px;
     height: 50px;
@@ -322,7 +329,7 @@ body {
   color: #FF5D50;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .header-bar {
     background: #fff;
     border-bottom: 2px solid #FFD153;
@@ -356,7 +363,7 @@ body {
   color: #747474;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .platform {
     width: 80vw;
   }
@@ -383,10 +390,6 @@ body {
 }
 .role ul li {
   width: 23.5%;
-  border-radius: 12px;
-  -webkit-box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.0784313725);
-          box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.0784313725);
-  background: #fff;
 }
 .role ul li .roleBody {
   padding: 16px 16px 24px;
@@ -399,7 +402,7 @@ body {
   font-weight: bold;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .role ul {
     width: 67vw;
     margin: 0 auto;
@@ -442,20 +445,13 @@ body {
 }
 .feature ul li {
   width: 230px;
-  border-radius: 12px;
-  -webkit-box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.0784313725);
-          box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.0784313725);
   padding: 32px 32px 48px;
-  background: #fff;
 }
 .feature ul li .icon {
   width: 86px;
   height: 86px;
-  background: #FFFFFF;
   background-repeat: no-repeat;
   background-position: center;
-  -webkit-box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.0784313725);
-          box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.0784313725);
   border-radius: 100%;
 }
 .feature ul li:first-child .icon {
@@ -474,7 +470,7 @@ body {
   font-weight: bold;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .feature {
     display: block;
   }
@@ -506,12 +502,8 @@ body {
 }
 .evaluate .userList > li {
   width: 32.5%;
-  -webkit-box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.0784313725);
-          box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.0784313725);
-  border-radius: 12px;
   padding: 48px 32px 24px;
   position: relative;
-  background: #fff;
 }
 .evaluate .userList > li p {
   padding-bottom: 24px;
@@ -522,8 +514,6 @@ body {
   height: 80px;
   width: 80px;
   border-radius: 100%;
-  -webkit-box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.0784313725);
-          box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.0784313725);
   position: absolute;
   top: -50px;
 }
@@ -584,7 +574,7 @@ body {
   margin-right: 0;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 992px) {
   .evaluate .userList > li {
     width: 100%;
   }
@@ -601,7 +591,7 @@ footer .add {
   padding-top: 260px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   footer .add {
     background: #fff;
     background-image: url("../images/footer_sm.svg");
@@ -625,7 +615,7 @@ footer .add {
   position: relative;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .program {
     height: 100vh;
     background-image: url("../images/banner_sm.svg");
@@ -644,7 +634,7 @@ footer .add {
   z-index: -1;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .program-bg {
     height: calc(100vh - 10%);
     border-radius: 0px 0px 0px 150px;
@@ -658,7 +648,7 @@ footer .add {
   background-position: -267px 120vh;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .bg-ball {
     background-size: 204px;
     background-position: -108px 210vh;
@@ -690,6 +680,7 @@ footer .add {
   border-radius: 27px;
   color: #56C4C5;
   font-family: "Comfortaa";
+  white-space: nowrap;
 }
 .programList .peopleChoose a:hover {
   background: #56C4C5;
@@ -700,22 +691,20 @@ footer .add {
   color: #fff;
 }
 
-@media (max-width: 767px) {
-  .programList {
-    width: 93vw;
-  }
-  .programList .peopleChoose {
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: start;
-    overflow-x: scroll;
-  }
+@media (max-width: 768px) {
   .programList .peopleChoose li {
     margin-right: 8px;
   }
   .programList .peopleChoose a {
     padding: 8px 16px;
-    white-space: nowrap;
+  }
+}
+@media (max-width: 576px) {
+  .programList .peopleChoose {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    overflow-x: scroll;
   }
 }
 .feeList {
@@ -730,17 +719,25 @@ footer .add {
 .feeList > li {
   width: 50%;
   margin-right: 2%;
-  background: #fff;
-  -webkit-box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.0784313725);
-          box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.0784313725);
-  border-radius: 12px;
   padding-bottom: 38px;
 }
 .feeList .feeBody {
   padding: 32px 23px 0 29px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
+  .feeList {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .feeList > li {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 576px;
+    width: 100%;
+  }
+}
+@media (max-width: 576px) {
   .feeList {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -769,16 +766,16 @@ footer .add {
   background: #F5F5F5;
   border-radius: 12px;
   padding: 24px 32px;
+  white-space: nowrap;
 }
 .feeFormula > div span {
   margin-right: 4px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 992px) {
   .feeFormula > div {
     width: 46%;
     padding: 16px 24px;
-    white-space: nowrap;
   }
 }
 .functionList {
@@ -792,7 +789,7 @@ footer .add {
   display: inline;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .functionList li img {
     width: 16px;
     line-height: 14px;
@@ -807,9 +804,6 @@ footer .add {
   background-size: 20px;
   background-position: top 19px right 32px;
   padding: 16px 32px;
-  -webkit-box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.0784313725);
-          box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.0784313725);
-  border-radius: 12px;
 }
 .QAList ul li p {
   display: none;
@@ -827,7 +821,7 @@ footer .add {
   font-weight: normal;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .QAList ul li {
     background-size: 16px;
     padding: 16px;
