@@ -212,17 +212,48 @@ body {
 }
 
 .indexBody {
-  background-image: url("../images/ball01.svg"), url("../images/ball02.svg");
+  background-image: url("../images/ball01.svg");
   background-repeat: no-repeat;
-  background-size: 360px, 310px;
-  background-position: -222px calc(100vh - 180px), calc(100vw - 210px) calc(230vh - 180px);
+  background-size: 360px;
+  background-position: -222px calc(100vh - 180px);
   color: #221E1F;
 }
 
 @media (max-width: 768px) {
   .indexBody {
-    background-size: 126px, 135px, 153px;
-    background-position: -77px calc(100vh + 15px), calc(100vw - 88px) 460vh, -76px 750vh;
+    background-size: 126px;
+    background-position: -77px calc(100vh + 15px);
+  }
+}
+.role-bg {
+  position: relative;
+}
+
+.hero_ball02 {
+  width: 310px;
+  height: 310px;
+  position: absolute;
+  background-image: url("../images/ball02.svg");
+  background-repeat: no-repeat;
+  background-size: 310px;
+  z-index: -1;
+  bottom: -180px;
+  left: calc(100vw - 350px);
+}
+
+@media (max-width: 1280px) {
+  .hero_ball02 {
+    width: 210px;
+    left: calc(100% - 210px);
+  }
+}
+@media (max-width: 768px) {
+  .hero_ball02 {
+    width: 88px;
+    height: 135px;
+    bottom: -80px;
+    background-size: 135px;
+    left: calc(100% - 88px);
   }
 }
 .hero_ball03 {
