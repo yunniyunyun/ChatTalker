@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -202,11 +203,6 @@ a {
   border-radius: 12px;
 }
 
-@media (max-width: 992px) {
-  .s-display-n {
-    display: none;
-  }
-}
 body {
   font-family: "Noto Sans TC", "sans-serif";
 }
@@ -553,41 +549,36 @@ body {
   text-align: left;
 }
 .evaluate .userList > li {
-  width: 32.5%;
+  width: 33%;
   padding: 48px 32px 24px;
   position: relative;
 }
 .evaluate .userList > li p {
+  height: 60%;
   padding-bottom: 24px;
   border-bottom: 1px solid #DDDDDD;
 }
 .evaluate .userList > li .userPic {
-  background-size: contain;
+  background-size: 100%;
   height: 80px;
   width: 80px;
   border-radius: 100%;
   position: absolute;
   top: -50px;
 }
-.evaluate .userList > li:first-child .userPic {
-  background-image: url("../images/user01.jpg");
-}
-.evaluate .userList > li:nth-child(2) .userPic {
-  background-image: url("../images/user02.jpg");
-}
-.evaluate .userList > li:nth-child(3) .userPic {
-  background-image: url("../images/user03.jpg");
+.evaluate .userList > li .userPic img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  border-radius: 100%;
 }
 .evaluate .userBody {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+}
+.evaluate .userBody h3 {
+  font-weight: bold;
 }
 .evaluate .star {
   display: -webkit-box;
@@ -602,28 +593,13 @@ body {
 .evaluate .star img {
   height: 16px;
 }
-.evaluate .userInfo h3 {
-  font-weight: bold;
-}
-.evaluate .bar {
+.evaluate .userInfo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-.evaluate .bar li {
-  height: 10px;
-  width: 10px;
-  background: #DDDDDD;
-  border-radius: 50px;
-  margin-right: 8px;
-}
-.evaluate .bar li:last-child {
-  width: 16px;
-  background: #FFD153;
-  margin-right: 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 @media (max-width: 992px) {
@@ -915,10 +891,6 @@ footer .add {
   margin-bottom: 100px;
 }
 
-.mb-104 {
-  margin-bottom: 104px;
-}
-
 @media (max-width: 768px) {
   .s-mb-16 {
     margin-bottom: 16px;
@@ -947,8 +919,34 @@ footer .add {
   .s-mb-60 {
     margin-bottom: 60px;
   }
+}
+/* 將套件主色改為黃色 */
+:root {
+  --swiper-theme-color: #FFD153;
+}
 
-  .s-mb-88 {
-    margin-bottom: 88px;
-  }
+/* 調整 swiper 容器 */
+.swiper {
+  padding-top: 60px;
+  padding-right: 16px;
+}
+
+.swiper-wrapper {
+  padding: 0 0 0 8px;
+}
+
+.swiper-slide {
+  height: initial;
+}
+
+/* 將底部 pagination 分頁的 active 狀態改為想要的樣式 */
+.swiper-pagination-bullet-active {
+  width: 16px;
+  border-radius: 8px;
+}
+
+/* 讓分頁圓點移至下方 */
+.swiper-pagination {
+  position: static;
+  margin-top: 24px;
 }
